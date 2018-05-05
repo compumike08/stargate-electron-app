@@ -1,9 +1,0 @@
-{
-  "name": "stargate-electron-app",
-  "version": "0.1.0",
-  "description": "Electron app to simulate a Stargate dialing computer",
-  "main": "index.js",
-  "repository": "https://github.com/compumike08/stargate-electron-app",
-  "author": "compumike08",
-  "license": "MIT"
-}
