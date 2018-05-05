@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import stargateLogo from '../img/Milky_Way_stargate.png';
-import glyphEarthOrigin from '../img/glyphs/1-earth-origin.svg';
 import './App.css';
+
+import StargateIcon from './StargateIcon/StargateIcon';
+import ChevronStatuses from './ChevronStatuses/ChevronStatuses';
 
 class App extends Component {
   render() {
+    const tempGlyphsArray = [];
     return (
       <div className="App">
         <div className="container-fluid">
@@ -16,21 +18,8 @@ class App extends Component {
         </div>
         <div className="container-fluid">
           <div className="row">
-            <div className="stargate-icon col-sm-8 col-sm-offset-2">
-              <img src={stargateLogo} width="700px" height="700px" />
-            </div>
-            <div className="cheveron-statuses col-sm-2">
-              <div className="chevron-holder row">
-                <div className="chevron-label chevron-label--1 col-sm-1">
-                  1
-                </div>
-                <div className="chevron-status col-sm-10">
-                  <div className="panel panel-default">
-                    <img className="glyph glyph-1" src={glyphEarthOrigin} />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <StargateIcon />
+            <ChevronStatuses glyphs={tempGlyphsArray} />
           </div>
         </div>
       </div>
