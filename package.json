@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "https://github.com/compumike08/stargate-electron-app",
   "author": "compumike08",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^2.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.11.1"
+  }
 }
