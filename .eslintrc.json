@@ -20,10 +20,7 @@
     "no-unused-vars": "warn",
     "constructor-super": "warn",
     "valid-typeof": "warn",
-    "quotes": [
-      2,
-      "single"
-    ],
+    "quotes": [0],
     "react/prefer-stateless-function": 0,
     "import/extensions": [
       1,
