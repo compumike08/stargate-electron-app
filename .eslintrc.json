@@ -35,7 +35,8 @@
     "comma-dangle": 0,
     "max-len": 0,
     "import/prefer-default-export": 0,
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "react/forbid-prop-types": 0
   },
   "parser": "babel-eslint",
   "extends": "airbnb",
