@@ -8,7 +8,7 @@ const url = require('url');
 let mainWindow;
 
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  mainWindow = new BrowserWindow({ width: 2000, height: 1000, resizable: false });
 
   mainWindow.loadURL(process.env.ELECTRON_START_URL ||
         url.format({
