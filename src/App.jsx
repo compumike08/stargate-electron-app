@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import stargateLogo from './img/Milky_Way_stargate.png';
-import glyphEarthOrigin from './img/glyph-earth-origin.svg';
+import glyphEarthOrigin from './img/glyphs/1-earth-origin.svg';
 import './App.css';
 
 class App extends Component {
