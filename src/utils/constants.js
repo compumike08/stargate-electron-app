@@ -1,0 +1,6 @@
+export const CHEVRON_STATUSES = {
+  IDLE: 'IDLE',
+  ENCODED: 'ENCODED',
+  LOCKED: 'LOCKED',
+  ERROR: 'ERROR'
+};

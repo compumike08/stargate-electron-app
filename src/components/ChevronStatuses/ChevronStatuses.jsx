@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ChevronStatus from '../ChevronStatus/ChevronStatus';
 
-const ChevronStatuses = ({ glyphs }) => (
+const ChevronStatuses = ({ chevrons }) => (
   <div className="cheveron-statuses col-sm-2">
     <ChevronStatus num={1} />
     <ChevronStatus num={2} />
@@ -15,7 +15,7 @@ const ChevronStatuses = ({ glyphs }) => (
 );
 
 ChevronStatuses.propTypes = {
-  glyphs: PropTypes.array.isRequired
+  chevrons: PropTypes.array.isRequired
 };
 
 export default ChevronStatuses;
