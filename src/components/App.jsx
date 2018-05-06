@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import './App.css';
 
+import Controller from './Controller/Controller';
 import StargateIcon from './StargateIcon/StargateIcon';
 import ChevronStatuses from './ChevronStatuses/ChevronStatuses';
 
@@ -19,6 +20,7 @@ class App extends Component {
         </div>
         <div className="container-fluid">
           <div className="row">
+            <Controller />
             <StargateIcon />
             <ChevronStatuses chevrons={this.props.chevrons} />
           </div>

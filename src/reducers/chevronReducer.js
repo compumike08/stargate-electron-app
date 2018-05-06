@@ -1,14 +1,16 @@
 import * as types from '../actions/actionTypes';
 import initialState from './initialState';
-import { sortChevrons } from '../utils/utils'
+import { sortChevrons } from '../utils/utils';
 import { CHEVRON_STATUSES } from '../utils/constants';
 
 export default function combinedStatusReducer(state = initialState.chevrons, action) {
   switch (action.type) {
     case types.CHEVRON_ENCODED: {
+      console.log(state);
+
       const targetChevron = state.find(chevron => chevron.num === action.chevronNum);
 
-      targetChevron.glyphId = action.glyphId;
+      targetChevron.glyphId = parseInt(action.glyphId);
       targetChevron.status = CHEVRON_STATUSES.ENCODED;
 
       const tempChevrons = [
