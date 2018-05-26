@@ -19,7 +19,7 @@ ChevronStatus.defaultProps = {
 };
 
 ChevronStatus.propTypes = {
-  num: PropTypes.number.isRequired,
+  num: PropTypes.string.isRequired,
   glyph: PropTypes.string
 };
 

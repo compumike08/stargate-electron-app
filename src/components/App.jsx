@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import './App.css';
 
@@ -22,7 +21,7 @@ class App extends Component {
           <div className="row">
             <Controller />
             <StargateIcon />
-            <ChevronStatuses chevrons={this.props.chevrons} />
+            <ChevronStatuses />
           </div>
         </div>
       </div>
@@ -30,14 +29,9 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-  chevrons: PropTypes.array.isRequired
-};
-
 function mapStateToProps(state) {
   return {
-    glyphs: state.glyphs,
-    chevrons: state.chevrons
+    glyphs: state.glyphs
   };
 }
 

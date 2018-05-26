@@ -12,24 +12,35 @@ class Controller extends Component {
   constructor(props, context) {
     super(props, context);
 
+    this.state = {
+      dialId: null
+    };
+
+    this.updateDialerState = this.updateDialerState.bind(this);
     this.handleDial = this.handleDial.bind(this);
   }
 
-  handleDial() {
-    const glyph1 = window.prompt("Enter 1st glyph ID");
+  updateDialerState(evt){
+    return this.setState({ dialId: evt.target.value });
+  }
 
-    this.props.chevronActions.encodeChevron(glyph1, 1);
+  handleDial() {
+    const glyph1 = this.state.dialId;
+    this.props.chevronActions.encodeChevron1(glyph1);
   }
 
   render() {
     return (
       <div className="col-sm-2">
-        <Button
-          bsStyle="primary"
-          onClick={this.handleDial}
-        >
-          DIAL
-        </Button>
+        <form>
+          <input type="text" className="form-control" id="dialerInput" onChange={this.updateDialerState} />
+          <Button
+            bsStyle="primary"
+            onClick={this.handleDial}
+          >
+            DIAL
+          </Button>
+        </form>
       </div>
     );
   }

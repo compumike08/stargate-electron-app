@@ -44,43 +44,34 @@ import glyphImg38 from '../img/glyphs/38-leo-minor.svg';
 import glyphImg39 from '../img/glyphs/39-leo.svg';
 
 export default {
-  chevrons: [
-    {
-      num: 1,
-      status: CHEVRON_STATUSES.IDLE,
-      glyphId: null
-    },
-    {
-      num: 2,
-      status: CHEVRON_STATUSES.IDLE,
-      glyphId: null
-    },
-    {
-      num: 3,
-      status: CHEVRON_STATUSES.IDLE,
-      glyphId: null
-    },
-    {
-      num: 4,
-      status: CHEVRON_STATUSES.IDLE,
-      glyphId: null
-    },
-    {
-      num: 5,
-      status: CHEVRON_STATUSES.IDLE,
-      glyphId: null
-    },
-    {
-      num: 6,
-      status: CHEVRON_STATUSES.IDLE,
-      glyphId: null
-    },
-    {
-      num: 7,
-      status: CHEVRON_STATUSES.IDLE,
-      glyphId: null
-    }
-  ],
+  chevron1: {
+    status: CHEVRON_STATUSES.IDLE,
+    glyphId: null
+  },
+  chevron2: {
+    status: CHEVRON_STATUSES.IDLE,
+    glyphId: null
+  },
+  chevron3: {
+    status: CHEVRON_STATUSES.IDLE,
+    glyphId: null
+  },
+  chevron4: {
+    status: CHEVRON_STATUSES.IDLE,
+    glyphId: null
+  },
+  chevron5: {
+    status: CHEVRON_STATUSES.IDLE,
+    glyphId: null
+  },
+  chevron6: {
+    status: CHEVRON_STATUSES.IDLE,
+    glyphId: null
+  },
+  chevron7: {
+    status: CHEVRON_STATUSES.IDLE,
+    glyphId: null
+  },
   glyphs: [
     {
       id: 1,
